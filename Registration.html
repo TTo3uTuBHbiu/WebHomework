@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "description" content = "блог туриста">
+		<meta name = "keywords" content = "туризм, турист, путешествия">
+		<meta name = "author" content = "IlyaIvanov">
+		<link rel="shortcut icon" href="img/icon.png" type="image/png">
+		<title>Регистрация нового пользователя</title>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li>
+						 <a href="TouristMain.html">Главная</a>
+					</li>
+					<li>
+						<a href="Countries.html">Страны</a>
+					</li>
+					<li>
+						<a href="Advices.html">Советы</a>
+					</li>
+					<li>
+						<a href="#">Курорты</a>
+					</li>
+					<li>
+						<a href="#">Галерея</a>
+					</li>
+					<li>
+						 <a href="Add_article.html">Добавить статью</a>
+					</li>
+					<li>
+						 <a href="#">Регистрация</a>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+		
+		<h2>Регистрация</h2>
+		 <form  name="reg" action="#" method="post">
+
+		 	<div>
+		 		<label for="email">Почта</label>
+            	<input required type="email" name="mail" id="email" placeholder="e-mail">
+        	</div>
+
+        	<div>
+				<label for="login">Логин</label>
+            	<input required type="text" name="log" id="login" placeholder="Логин" minlength="5" maxlength="20">
+        	</div>
+		 	
+		 	<div>
+		 		<label for="pass">Пароль</label>
+            	<input required type="password" name="pwd" id="pass" placeholder="пароль" minlength="10" maxlength="20">
+        	</div>
+
+        	<div>
+		 		<label for="passCheck">Повторите пароль</label>
+            	<input required type="password" name="pwd" id="passCheck" placeholder="пароль" minlength="10" maxlength="20">
+        	</div>
+
+        	 <div>
+        	 	<legend>Пол</legend>
+            	<label>
+                	<input type="radio" name="gender" value="male">
+                	Мужчина
+            	</label>
+            	<label>
+                	<input type="radio" name="gender" value="female">
+                	Женщина
+            	</label>
+        	</div>
+
+        	<div>
+            	<label for="birth">Дата рождения</label>
+            	<input id="birth" name="birthday" type="date">
+       		 </div>
+
+			<div>
+            <input type="submit" value="Зарегистрироваться">
+        	</div>
+
+
+
+
+
+		 </form>
+
+	</body>
+</html>

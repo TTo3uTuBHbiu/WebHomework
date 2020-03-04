@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "description" content = "блог туриста">
+		<meta name = "keywords" content = "туризм, турист, путешествия">
+		<meta name = "author" content = "IlyaIvanov">
+		<link rel="shortcut icon" href="img/icon.png" type="image/png">
+		<title>Добавить статью</title>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li>
+						 <a href="TouristMain.html">Главная</a>
+					</li>
+					<li>
+						<a href="Countries.html">Страны</a>
+					</li>
+					<li>
+						<a href="Advices.html">Советы</a>
+					</li>
+					<li>
+						<a href="#">Курорты</a>
+					</li>
+					<li>
+						<a href="#">Галерея</a>
+					</li>
+					<li>
+						 <a href="#">Добавить статью</a>
+					</li>
+					<li>
+						 <a href="Registration.html">Регистрация</a>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<form enctype="multipart/form-data" name="add_article" action="#" method="post">
+			<h2>Здесь вы можете добавить статью на наш сайт</h2>
+
+            	<label for="category">Укажите тему вашей статьи</label>
+            	<select  id="category" name="category" size="1"> 
+                	<option value="travelling">Путешествия и туризм</option>
+                	<option value="advices">Советы путешествиникам</option>
+                	<option value="food">Кухни народов мира</option>
+                	<option value="any">Другое</option>
+
+            	</select>
+
+            	 <div>
+           
+            		<label>Фотографии </label>
+            		<input id="photo" multiple type="file" accept="image/*" name="photo[]">
+        		</div>
+
+        		<div>
+					<label for="nickname">Псевдоним,под которым будет опубликована ваша статья</label>
+            		<input required type="text" name="nick" id="nickname" placeholder="Имя" minlength="5" maxlength="20">
+        		</div>
+
+        		<div>
+        			<fieldset>
+        				<legend>История вашего приключения</legend>
+            			<label for="article">Ваша статья</label>
+            			<textarea required="" minlength="300" name="description" id="article"></textarea>
+            		</fieldset>
+        		</div>
+
+        		<div>
+            <input type="submit" value="Загрузить статью">
+        	</div>
+
+
+
+		</form >
+
+
+	</body>
+</html>
