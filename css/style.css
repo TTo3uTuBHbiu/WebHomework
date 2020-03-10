@@ -1,0 +1,43 @@
+/*Общие стили*/
+header {
+	background-color: pink;
+}
+body{
+	background-image:url(images/tyr.jpg) ;
+	background-color: #c7b39b;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+#author{
+	text-decoration: none;
+	color: red;
+
+}
+
+#art{
+	width: 500px;
+	height:auto;
+}
+
+#paper{
+	font-size:15px;
+	color: orange;
+	font-weight:bold;
+}
+#read{
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: red;
+  border-radius: 6px;
+  background: orange;
+  }
