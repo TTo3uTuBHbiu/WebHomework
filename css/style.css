@@ -1,6 +1,35 @@
 /*Общие стили*/
-header {
-	background-color: pink;
+header ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(255, 182, 193,0.9);
+	height: 4em;
+	border-radius: 20px;
+}
+
+header a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.1em;
+	font-weight: 600;
+
+}
+
+.flex-2{
+	width: 16.66%
+}
+
+.content-center{
+	padding-top: 1.4em;
+	text-align: center;
 }
 body{
 	background-image:url(images/tyr.jpg) ;
@@ -10,9 +39,7 @@ body{
 	
 }
 
-a{
-	text-decoration: none;
-}
+
 
 #author{
 	text-decoration: none;
@@ -27,7 +54,7 @@ a{
 
 #paper{
 	font-size:15px;
-	color: orange;
+	color: #8B0000;
 	font-weight:bold;
 }
 #read{
@@ -37,7 +64,76 @@ a{
   padding: 10px 40px;
   border-width: 2px 0;
   border-style: solid none;
-  border-color: red;
   border-radius: 6px;
   background: orange;
+  margin-top: 2em;
   }
+
+ footer ol{
+ 	list-style-type: none;
+ 	display: flex;
+ 	flex-direction: row;
+ 	background-color: pink;
+ 	height: 7em;
+ }
+
+ .flexFooter{
+ 	width: 20%;
+ }
+
+.headline{
+	font-style: oblique;
+	color: #FF4500;
+	font-size: 1.5em;	
+
+}
+.text{
+	margin-left: 5em;
+	background-color:rgba(0, 255, 255, 0.5);
+	padding: 2em;
+	border-radius:30px;
+
+}
+
+.submenu{
+	display: flex;
+	flex-direction: column;
+	height: 7em;
+	text-align: left;
+	justify-content: space-between;
+	padding-left: 7.5em;
+	opacity:0;
+	visibility: hidden;
+}
+
+li:hover .submenu {
+	opacity: 1;
+	visibility: visible;
+}
+.submenu2{
+	padding-top: 2em;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    background: #b19891;
+    padding: 30px;
+
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+}
+
+.modal:target {
+    top: 50%;
+}
+
+.modal:not(:target) {
+    top: -100%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

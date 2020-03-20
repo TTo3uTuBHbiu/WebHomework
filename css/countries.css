@@ -1,0 +1,9 @@
+main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-6{
+	width: 50%;
+}

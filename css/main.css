@@ -1,0 +1,23 @@
+img{
+	border-radius:10px;
+	border: 2px solid black;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+
+
+.flex-6{
+	width: 50%;
+}
+
+.flex-3{
+	width: 25%
+}
+
+
+

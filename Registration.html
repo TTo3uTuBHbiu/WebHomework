@@ -15,26 +15,45 @@
 		<header>
 			<nav>
 				<ul>
-					<li>
+					<li class="flex-2 content-center">
 						 <a href="TouristMain.html">Главная</a>
 					</li>
-					<li>
+					<li class="flex-2 content-center">
 						<a href="Countries.html">Страны</a>
 					</li>
-					<li>
+					<li class="flex-2 content-center">
 						<a href="Advices.html">Советы</a>
 					</li>
-					<li>
-						<a href="#">Курорты</a>
+					<li class="flex-2 content-center ">
+						<a href="#" class="topmenu">Галерея </a>
+
+						<ul class="submenu"> 
+                    		<li >
+                        		<a href="#">Италия</a> 
+                    		</li>
+                    		<li>
+                        		<a href="#">Испания</a> 
+                    		</li>
+                    		<li>
+                        		<a href="#">Япония</a> 
+                    		</li>
+                    		<li>
+                        		<a href="#">Австралия</a>
+                    		</li>
+                    	</ul>
+
 					</li>
-					<li>
-						<a href="#">Галерея</a>
+					<li class="flex-2 content-center">
+						 <a href="Registration.html" class="topmenu">Регистрация</a>
+						 <ul class="submenu submenu2"> 
+						 	<li >
+                        		<a href="#auth">Войти</a> 
+                    		</li>
+
+						 </ul>
 					</li>
-					<li>
+					<li class="flex-2 content-center">
 						 <a href="Add_article.html">Добавить статью</a>
-					</li>
-					<li>
-						 <a href="#">Регистрация</a>
 					</li>
 
 				</ul>
@@ -90,6 +109,14 @@
 
 
 		 </form>
-
+		
+		<section class="modal" id="auth">
+    		<form class="flex-column" name="auth" action="#" method="post">
+        		<input type="email" name="email" placeholder="Введите Ваш e-mail">
+        		<input type="password" name="pwd" placeholder="Введите Ваш пароль">
+        		<input type="submit" value="Войти">
+    		</form>
+    		<a class="close-modal" href="#0">X</a>
+		</section>
 	</body>
 </html>
